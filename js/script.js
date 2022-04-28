@@ -6,14 +6,24 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Template/sw.js", {
-    scope: "/ICS2O-PWA-Template/",
+  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
+    scope: "/ICS2O-PWA-Test/",
   })
 }
+
+;("use strict")
 
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function check() {
+  // input
+  const integer = parseFloat(document.getElementById("integer").value)
+
+  // process and output
+  if (integer > 0) {
+    document.getElementById("answer").innerHTML = "Your number is positive!"
+  } else {
+    document.getElementById("answer").innerHTML = "Your number is negative!"
+  }
 }

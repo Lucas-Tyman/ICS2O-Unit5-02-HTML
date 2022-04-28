@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My first PWA" />
     <meta name="keywords" content="mths, ics2o" />
-    <meta name="author" content="Lucas Tyman" />
+    <meta name="author" content="Licas Tyman" />
     <meta name="theme-color" content="#FFFFFF" />
-    <link rel="canonical" href="https://https://Lucas-Tyman.github.io/ICS2O-PWA-Template//" />
-    <link rel="manifest" href="/ICS2O-PWA-Template/manifest.webmanifest" />
+    <link rel="canonical" href="https://https://Kenny-Le-281.github.io/ICS2O-PWA-Test//" />
+    <link rel="manifest" href="/ICS2O-PWA-Test/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously -->
@@ -31,18 +31,26 @@
       </header>
       <main class="mdl-layout__content">
         <p></p>
-        <img src="./images/temperature.svg" alt="temperature" width="25%" height="25%">
+        <img src="./images/numbers.svg" alt="numbers" width="50%" height="50%">
         <p></p>
+        <!-- Numeric Textfield -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="number" step="0" id="integer">
+              <label class="mdl-textfield__label" for="integer">Any Interger (no decimal)</label>
+              <span class="mdl-textfield__error">Please input a whole number</span>
+            </div>
+          </form>
+        <br>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Say "Hello, World!"
+          onclick="check()">
+          Check
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="answer"></div>
       </main>
     </div>
   </body>
