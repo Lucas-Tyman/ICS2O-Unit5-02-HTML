@@ -16,7 +16,7 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
-function check() {
+function calculate() {
   // input
   const integer = parseFloat(document.getElementById("integer").value)
 
