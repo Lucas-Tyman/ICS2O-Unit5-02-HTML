@@ -2,6 +2,8 @@
 // Created on: Apr 2022
 // This file contains the JS functions for index.html
 
+'use strict'
+
 /**
  * Check service worker.
  */
@@ -10,8 +12,6 @@ if (navigator.serviceWorker) {
     scope: "/ICS2O-Unit5-02-HTML/",
   })
 }
-
-;("use strict")
 
 /**
  * This function displays an alert.
